@@ -1,0 +1,258 @@
+input,
+textarea {
+    font-size: 28rpx;
+    font-family: 'PingFang SC', '-apple-system', 'Heiti SC', 'Helvetica', 'Helvetica Neue', 'Droid Sans Fallback', 'Droid Sans';
+}
+view,
+scroll-view,
+swiper,
+button,
+input,
+textarea,
+label,
+navigator,
+image {
+    box-sizing: border-box;
+}
+image {
+    width: auto;
+    height: auto;
+}
+ul,
+li {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+strong,
+b,
+em,
+i {
+    font-style: normal;
+    font-weight: normal;
+}
+cover-view {
+    white-space: normal;
+    box-sizing: border-box;
+}
+
+// button
+button {
+    position: relative;
+    margin: 0;
+    padding: 0;
+    font-size: 28rpx;
+    line-height: 1.5;
+    background-color: transparent;
+    border-radius: 0;
+}
+button::after {
+    width: 0;
+    height: 0;
+    border: none;
+}
+.button-hover {
+    opacity: 0.9;
+}
+
+// radio
+radio .uni-radio-input {
+    width: 36rpx;
+    height: 36rpx;
+}
+/* checkbox 样式 */
+checkbox .uni-checkbox-input {
+	@include styles('border-color', 'normalColor');
+    width: 28rpx;
+    height: 28rpx;
+	background-color: transparent;
+	border-radius: 6rpx;
+}
+checkbox .uni-checkbox-input-checked {
+	@include styles('background', 'primary');
+	@include styles('border-color', 'primary');
+	color: #fff !important;
+	&::before {
+		margin-top: -1px;
+		font-size: 34rpx !important;
+		font-weight: bold;
+	}
+}
+
+// switch
+switch .uni-switch-input {
+	@include styles('background-color', 'assistColor');
+	@include styles('border-color', 'lineColor');
+    width: 96rpx;
+    height: 50rpx;
+	margin-right: 0;
+    &::before {
+		@include styles('background', 'assistColor');
+        width: 100%;
+        height: 100%;
+    }
+    &::after {
+        width: 46rpx;
+        height: 46rpx;
+    }
+}
+switch .uni-switch-input.uni-switch-input-checked {
+	@include styles('background-color', 'primary');
+    &::after {
+        transform: translateX(50rpx);
+    }
+}
+
+// tabbar
+.uni-tabbar {
+	background: var(--contentColor);
+    .uni-tabbar__label {
+        margin-top: 0 !important;
+        z-index: 999;
+    }
+    .uni-tabbar__item:nth-child(4) {
+        .uni-tabbar__bd {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+            &::after {
+                content: '';
+                position: absolute;
+                left: -2px;
+                right: -2px;
+                top: 1px;
+                bottom: 0;
+                background-color: var(--contentColor);
+                z-index: 2;
+            }
+            .uni-tabbar__icon {
+                position: relative;
+                width: 100% !important;
+                &::after {
+                    content: '';
+                    display: inline-flex;
+                    position: absolute;
+                    left: -1px;
+                    right: -1px;
+                    bottom: 1px;
+                    background-color: #D5D5D5;
+                    height: 42px;
+                    border-radius: 999px;
+                    z-index: 1;
+                }
+                img {
+                    width: 40px;
+                    height: 40px;
+                    margin-top: -18px;
+                    background-color: var(--contentColor);
+                    border-radius: 50%;
+                    padding: 4px;
+                    position: relative;
+                    z-index: 33;
+                }
+            }
+        }
+    }
+}
+
+// uni-tabbar
+html.night {
+    .uni-tabbar {
+        .uni-tabbar__item:nth-child(4) {
+            .uni-tabbar__bd {
+                .uni-tabbar__icon {
+                    &::after {
+                        background-color: #3F4043;
+                    }
+                }
+            }
+        }
+    }
+}
+
+// placeholder
+.placeholderClass {
+	font-size: 28rpx;
+	@include styles('color', 'placeholdColor');
+}
+
+// toast
+.uni-sample-toast {
+    .uni-simple-toast__text {
+        word-break: normal;
+    }
+}
+
+// cover-view
+uni-cover-view .uni-cover-view {
+    width: auto;
+    height: auto;
+}
+
+// thor-ui 
+::v-deep {
+    .tui-skeleton-cmomon {
+        @include styles('background-color', 'bgColor');
+        z-index: 998 !important;
+    }
+    .tui-skeleton-box {
+        @include styles('background-color', 'contentColor');
+    }
+    .tui-tabs-view {
+        @include styles('background-color', 'contentColor');
+        @include styles('color', 'minorColor');
+    }
+    .tui-list-cell {
+        @include styles('color', 'color');
+        @include styles('background-color', 'contentColor');
+        &::after {
+            @include styles('border-bottom-color', 'lineColor');
+        }
+    }
+    .tui-list-content::before {
+        border-top: none !important;
+    }
+    .tui-modal-box {
+        @include styles('background-color', 'contentColor');
+        .tui-modal-title {
+            @include styles('color', 'color');   
+        }
+        .tui-modal-content {
+            @include styles('color', 'minorColor');
+        }
+    }
+    .tui-drawer-container {
+        @include styles('background-color', 'contentColor');
+    }
+    .tui-bottom-popup {
+        z-index: 1001 !important;
+    }
+    .tui-popup-mask {
+        z-index: 1000 !important;
+    }
+    .tui-tabs-view {
+        .tui-tabs-item {
+            @include styles('color', 'minorColor');
+        }
+    }
+}
+
+// 骨架屏动画颜色
+[data-theme='light'] {
+	&::v-deep {
+		.tui-skeleton__active {
+			background: linear-gradient(90deg, #F1F2F6 25%, #e6e6e6 37%, #F1F2F6 63%);
+			background-size: 400% 100%;
+		}
+	}
+}
+[data-theme='night'] {
+	&::v-deep {
+		.tui-skeleton__active {
+			background: linear-gradient(90deg, #0d0e12 25%, #000000 37%, #0d0e12 63%);
+			background-size: 400% 100%;
+		}
+	}
+}
+

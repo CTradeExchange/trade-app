@@ -1,0 +1,51 @@
+{
+	"bsonType": "object",
+	"required": [],
+	"permission": {
+		"read": false,
+		"create": false,
+		"update": false,
+		"delete": false
+	},
+	"properties": {
+		"_id": {
+			"description": "ID，系统自动生成"
+		},
+		"appId": {
+			"bsonType": "string",
+			"description": "应用的appId",
+			"label": "appId"
+		},
+		"type": {
+			"bsonType": "int",
+			"label": "错误类型",
+			"description": "出现错误的类型",
+			"enum": [{
+				"text": "WebSocket",
+				"value": 0
+			}]
+		},
+		"platform": {
+			"bsonType": "string",
+			"description": "操作系统，Android || iOS",
+			"label": "操作系统"
+		},
+		"model": {
+			"bsonType": "string",
+			"description": "出现错误的手机型号",
+			"label": "手机型号"
+		},
+		"describe": {
+			"bsonType": "string",
+			"description": "出现错误的问题描述",
+			"label": "问题描述"
+		},
+		"create_date": {
+			"bsonType": "timestamp",
+			"label": "创建时间",
+			"forceDefaultValue": {
+				"$env": "now"
+			}
+		}
+	}
+}

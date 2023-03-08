@@ -1,0 +1,11 @@
+# 忽略检测的文件
+dist/*
+
+# 其他类型文件
+*.js
+*.jpg
+*.png
+*.eot
+*.ttf
+*.woff
+*.json

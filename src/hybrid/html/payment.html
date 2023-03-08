@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<title></title>
+<style>
+	* {
+		margin: 0;
+		padding: 0;
+	}
+	.form {
+		display: none;
+	}
+	.form-item {
+		display: flex;
+		align-items: center;
+		padding: 0 20px;
+		height: 25px;
+		font-size: 14px;
+		color: #656667;
+		background: #fff;
+		border-bottom: 1px solid #eee;
+	}
+	.form-item span {
+		width: 140px;
+	}
+	.form-item input {
+		height: 100%;
+		background: none;
+		border: none;
+		outline: none;
+	}
+</style>
+</head>
+<body>
+<div id='app'>
+	<form id='form' class='form' :action='formUrl' method='post'>
+		<div class='form-item' v-for="(value, key) in formData" :key='key'>
+			<span>{{key}}：</span>
+			<input 
+				:name='key'
+				:value='value'
+			/>
+		</div>
+	</form>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/vue@2"></script>
+<script type="text/javascript" src="./js/uni.webview.1.5.2.js"></script>
+<script type="text/javascript">
+	const app = new Vue({
+		el: '#app',
+		data: {
+			// 表单提交地址
+			formUrl: decodeURIComponent(getQueryVariable('formUrl')),
+			// 表单提交的数据
+			formData: JSON.parse(decodeURIComponent(getQueryVariable('formData'))) 
+		}
+	})
+	
+	// 提交表单
+	document.getElementById('form').submit()
+
+	// 获取url参数
+	function getQueryVariable(variable) {
+	   var query = window.location.search.substring(1);
+	   var vars = query.split("&");
+	   for (var i=0;i<vars.length;i++) {
+			   var pair = vars[i].split("=");
+			   if(pair[0] == variable){return pair[1];}
+	   }
+	   return(false);
+	}
+</script>
+</body>
+</html>

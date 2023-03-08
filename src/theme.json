@@ -1,0 +1,14 @@
+{
+	"light": {
+		"bgColor": "#FFFFFF",
+		"alphaBGColor": "#FFFFFF",
+		"navBarTextStyle": "black",
+		"tabBgColor": "#FFFFFF"
+	},
+	"dark": {
+		"bgColor": "#000000",
+		"alphaBGColor": "#000000",
+		"navBarTextStyle": "white",
+		"tabBgColor": "#191a1e"
+	}
+}

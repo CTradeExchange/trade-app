@@ -1,0 +1,505 @@
+{
+	"pages": [ //pages数组中第一项表示应用启动
+		{
+			"path": "pages/home/index",
+			"style": {
+				"navigationBarTitleText": "首页"
+			}
+		},
+        {
+			"path": "pages/home/home",
+			"style": {
+				"navigationBarTitleText": "首页"
+			}
+		},
+		{
+			"path": "pages/quote/index",
+			"style": {
+				"navigationBarTitleText": "行情"
+			}
+		},
+		{
+			"path": "pages/quote/search",
+			"style": {
+				"navigationBarTitleText": "搜索"
+			}
+		},
+		{
+			"path": "pages/order/index",
+			"style": {
+				"navigationBarTitleText": "交易"
+			}
+		},
+		{
+			"path": "pages/order/list",
+			"style": {
+				"navigationBarTitleText": "交易记录"
+			}
+		},
+		{
+			"path": "pages/order/trustDetail",
+			"style": {
+				"navigationBarTitleText": "委托详情"
+			}
+		},
+		{
+			"path": "pages/assets/index",
+			"style": {
+				"navigationBarTitleText": "资产"
+			}
+		},
+		{
+			"path": "pages/assets/positionDetail",
+			"style": {
+				"navigationBarTitleText": "持仓明细"
+			}
+		},
+		{
+			"path": "pages/assets/record",
+			"style": {
+				"enablePullDownRefresh": true,
+				"navigationBarTitleText": "资金记录",
+				"app-plus": {
+					"pullToRefresh": {
+						"offset": "80px"
+					}
+				}
+			}
+		},
+		{
+			"path": "pages/assets/info",
+			"style": {
+				"navigationBarTitleText": "资产信息"
+			}
+		},
+		{
+			"path": "pages/assets/loan",
+			"style": {
+				"navigationBarTitleText": "借款"
+			}
+		},
+		{
+			"path": "pages/assets/repayment",
+			"style": {
+				"navigationBarTitleText": "还款"
+			}
+		},
+		{
+			"path": "pages/assets/transfer",
+			"style": {
+				"navigationBarTitleText": "划转"
+			}
+		},
+		{
+			"path": "pages/assets/choose",
+			"style": {
+				"navigationBarTitleText": "选择币种"
+			}
+		},
+		{
+			"path": "pages/mine/index",
+			"style": {
+				"navigationBarTitleText": "我的"
+			}
+		},
+		{
+			"path": "pages/mine/login",
+			"style": {
+				"navigationBarTitleText": "登录"
+			}
+		},
+		{
+			"path": "pages/mine/register",
+			"style": {
+				"navigationBarTitleText": "注册"
+			}
+		},
+		{
+			"path": "pages/mine/appRegister",
+			"style": {
+				"navigationBarTitleText": "app注册"
+			}
+		},
+		{
+			"path": "pages/mine/registerHandler",
+			"style": {
+				"navigationBarTitleText": "注册审核"
+			}
+		},
+		{
+			"path": "pages/mine/registerSuccess",
+			"style": {
+				"navigationBarTitleText": "注册成功"
+			}
+		},
+		{
+			"path": "pages/mine/forgetLoginPwd",
+			"style": {
+				"navigationBarTitleText": "忘记登录密码"
+			}
+		},
+		{
+			"path": "pages/mine/resetSuccess",
+			"style": {
+				"navigationBarTitleText": "登录密码重置成功"
+			}
+		},
+		{
+			"path": "pages/mine/forgetFundPwd",
+			"style": {
+				"navigationBarTitleText": "忘记密码"
+			}
+		},
+		{
+			"path": "pages/mine/msg",
+			"style": {
+				"navigationBarTitleText": "消息中心",
+				"app-plus": {
+					"pullToRefresh": {
+						"offset": "80px"
+					}
+				}
+			}
+		},
+		{
+			"path": "pages/mine/setting",
+			"style": {
+				"navigationBarTitleText": "安全设置"
+			}
+		},
+		{
+			"path": "pages/mine/common",
+			"style": {
+				"navigationBarTitleText": "通用设置"
+			}
+		},
+		{
+			"path": "pages/mine/setLoginPwd",
+			"style": {
+				"navigationBarTitleText": "设置登录密码"
+			}
+		},
+		{
+			"path": "pages/mine/setFundPwd",
+			"style": {
+				"navigationBarTitleText": "设置资金密码"
+			}
+		},
+		{
+			"path": "pages/mine/bindMobile",
+			"style": {
+				"navigationBarTitleText": "绑定手机"
+			}
+		},
+		{
+			"path": "pages/mine/bindEmail",
+			"style": {
+				"navigationBarTitleText": "绑定邮箱"
+			}
+		},
+		{
+			"path": "pages/person/authentication",
+			"style": {
+				"navigationBarTitleText": "身份验证"
+			}
+		},
+		{
+			"path": "pages/person/authForm",
+			"style": {
+				"navigationBarTitleText": "身份验证"
+			}
+		},
+		{
+			"path": "pages/person/authResult",
+			"style": {
+				"navigationBarTitleText": "提交KYC"
+			}
+		},
+		{
+			"path": "pages/person/bankList",
+			"style": {
+				"navigationBarTitleText": "银行卡列表"
+			}
+		},
+		{
+			"path": "pages/person/addBank",
+			"style": {
+				"navigationBarTitleText": "添加银行卡"
+			}
+		},
+		{
+			"path": "pages/person/walletAddress",
+			"style": {
+				"navigationBarTitleText": "钱包地址"
+			}
+		},
+		{
+			"path": "pages/person/addWallet",
+			"style": {
+				"navigationBarTitleText": "添加钱包地址"
+			}
+		},
+		{
+			"path": "pages/withdraw/choose",
+			"style": {
+				"navigationBarTitleText": "选择提现币种"
+			}
+		},
+		{
+			"path": "pages/withdraw/money",
+			"style": {
+				"navigationBarTitleText": "提现"
+			}
+		},
+		{
+			"path": "pages/withdraw/payRedeem",
+			"style": {
+				"navigationBarTitleText": "提现"
+			}
+		},
+		{
+			"path": "pages/withdraw/coin",
+			"style": {
+				"navigationBarTitleText": "提币"
+			}
+		},
+		{
+			"path": "pages/withdraw/withdrawRecord",
+			"style": {
+				"navigationBarTitleText": "提现记录",
+				"enablePullDownRefresh": true,
+				"app-plus": {
+					"pullToRefresh": {
+						"offset": "80px"
+					}
+				}
+			}
+		},
+		{
+			"path": "pages/deposit/choose",
+			"style": {
+				"navigationBarTitleText": "充值"
+			}
+		},
+		{
+			"path": "pages/deposit/answers",
+			"style": {
+				"navigationBarTitleText": "相关问题"
+			}
+		},
+		{
+			"path": "pages/deposit/record",
+			"style": {
+				"navigationBarTitleText": "充值记录",
+				"enablePullDownRefresh": true,
+				"app-plus": {
+					"pullToRefresh": {
+						"offset": "80px"
+					}
+				}
+			}
+		},
+		{
+			"path": "pages/contract/index",
+			"style": {
+				"navigationBarTitleText": "合约属性"
+			}
+		},
+		{
+			"path": "pages/news/detail",
+			"style": {
+				"navigationBarTitleText": "资讯详情"
+			}
+		},
+		{
+			"path": "pages/fund/index",
+			"style": {
+				"navigationBarTitleText": "基金申赎"
+			}
+		},
+		{
+			"path": "pages/fund/info",
+			"style": {
+				"navigationBarTitleText": "基金详情"
+			}
+		},
+		{
+			"path": "pages/fund/deal",
+			"style": {
+				"navigationBarTitleText": "基金申赎"
+			}
+		},
+		{
+			"path": "pages/fund/rules",
+			"style": {
+				"navigationBarTitleText": "申赎规则"
+			}
+		},
+		{
+			"path": "pages/fund/record",
+			"style": {
+				"navigationBarTitleText": "申赎记录"
+			}
+		},
+		{
+			"path": "pages/googleMFA/status",
+			"style": {
+				"navigationBarTitleText": "谷歌身份验证"
+			}
+		},
+		{
+			"path": "pages/googleMFA/install",
+			"style": {
+				"navigationBarTitleText": "谷歌验证器"
+			}
+		},
+		{
+			"path": "pages/googleMFA/bind",
+			"style": {
+				"navigationBarTitleText": "绑定谷歌验证器"
+			}
+		},
+		{
+			"path": "pages/googleMFA/secretKey",
+			"style": {
+				"navigationBarTitleText": "绑定谷歌验证器"
+			}
+		},
+		{
+			"path": "pages/notice/index",
+			"style": {
+				"navigationBarTitleText": "公告"
+			}
+		},
+        {
+			"path": "pages/notice/detail",
+			"style": {
+				"navigationBarTitleText": "公告详情"
+			}
+		},
+		{
+			"path": "pages/webview/index"
+		},
+		{
+			"path": "pages/webview/product"
+		},
+		{
+			"path": "pages/webview/payment"
+		},
+		{
+			"path": "pages/webview/v10"
+		},
+		{
+			"path": "pages/webview/antpay"
+		},
+		{
+			"path": "pages/webview/upgradeMaintenance"
+		},
+		{
+			"path": "pages/webview/demo"
+		},
+		{
+			"path": "upgrade/pages/index",
+			"style": {
+				"disableScroll": true,
+				"app-plus": {
+					"backgroundColorTop": "transparent",
+					"background": "transparent",
+					"titleNView": false,
+					"scrollIndicator": false,
+					"popGesture": "none",
+					"animationType": "fade-in",
+					"animationDuration": 200
+				}
+			}
+		}
+	],
+	"globalStyle": {
+		"navigationStyle": "custom",
+		"navigationBarTextStyle": "@navBarTextStyle",
+		"app-plus": {
+			"bounce": "none",
+			"animationType": "slide-in-right",
+			"animationDuration": 200,
+			"background": "@bgColor",
+			"backgroundColorTop": "@bgColor",
+			"backgroundColorBottom": "@bgColor",
+			"animationAlphaBGColor": "@alphaBGColor"
+		}
+	},
+	"tabBar": {
+		"fontSize": "12px",
+		"color": "#999999",
+		"selectedColor": "#0062ff",
+		"list": [
+			{
+				"pagePath": "pages/home/index",
+				"text": "Home",
+				"iconPath": "static/image/nav/home.png",
+				"selectedIconPath": "/static/image/nav/home-active.png?v=1"
+			},
+			{
+				"pagePath": "pages/quote/index",
+				"text": "Quote",
+				"iconPath": "static/image/nav/quote.png",
+				"selectedIconPath": "static/image/nav/quote-active.png?v=1"
+			},
+			{
+				"pagePath": "pages/order/index",
+				"text": "Trade",
+				"iconPath": "static/image/nav/trade.png",
+				"selectedIconPath": "static/image/nav/trade-active.png?v=1"
+			},
+			{
+				"pagePath": "pages/assets/index",
+				"text": "Assets",
+				"iconPath": "static/image/nav/assets.png",
+				"selectedIconPath": "static/image/nav/assets-active.png?v=1"
+			},
+			{
+				"pagePath": "pages/mine/index",
+				"text": "Mine",
+				"iconPath": "static/image/nav/mine.png",
+				"selectedIconPath": "static/image/nav/mine-active.png?v=1"
+			}
+		]
+	},
+	"easycom": {
+		"autoscan": true,
+		"custom": {
+			"tui-(.*)": "thorui-uni/lib/thorui/tui-$1/tui-$1.vue",
+			"page-component": "@/components/common/page-component.vue",
+			"nav-bar": "@/components/common/nav-bar.vue",
+			"tab-bar": "@/components/common/tab-bar.vue",
+			"image-upload": "@/components/common/image-upload.vue",
+			"swiper-banner": "@/components/common/swiper-banner.vue",
+			"loading-more": "@/components/common/loading-more.vue",
+			"none-data": "@/components/common/none-data.vue",
+			"mask-layer": "@/components/common/mask-layer.vue",
+			"modal-dialog": "@/components/common/modal-dialog.vue",
+			"picker-dialog": "@/components/common/picker-dialog.vue",
+			"dropdown-item": "@/components/common/dropdown-item.vue",
+			"header-title": "@/components/modules/header-title.vue",
+			"verify-code": "@/components/modules/verify-code.vue",
+			"number-box": "@/components/modules/number-box.vue",
+			"notice-dialog": "@/components/modules/notice-dialog.vue",
+			"play-tabs": "@/components/modules/play-tabs.vue",
+			"play-category": "@/components/modules/play-category.vue",
+			"etf-icon": "@/components/modules/etf-icon.vue",
+			"currency-icon": "@/components/modules/currency-icon.vue",
+			"google-code": "@/components/modules/google-code.vue",
+			"powered-by": "@/components/modules/powered-by.vue",
+			"top-nav": "@/components/modules/top-nav.vue"
+		}
+	},
+	"condition" : { //模式配置，仅开发期间生效
+		"current": 0, //当前激活的模式(list 的索引项)
+		"list": [
+			{
+				"name": "assets", //模式名称
+				"path": "pages/home/index", //启动页面，必选
+				"query": "" //启动参数，在页面的onLoad函数里面得到
+			}
+		]
+	}
+}

@@ -1,0 +1,162 @@
+/* 页面布局 start */
+.layout {
+	height: 100%;
+	@include styles('background-color', 'bgColor');
+}
+
+.layout-container {
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	min-height: 100%;
+	padding-bottom: env(safe-area-inset-bottom);
+	@include styles('color', 'color');
+	@include styles('background-color', 'bgColor');
+}
+
+.layout-container-full {
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	height: 100%;
+	padding-bottom: env(safe-area-inset-bottom);
+	@include styles('color', 'color');
+	@include styles('background-color', 'bgColor');
+}
+
+.layout-content {
+	-webkit-overflow-scrolling: touch;
+	display: flex;
+	flex: 1;
+	flex-direction: column;
+	overflow: auto;
+	position: relative;
+}
+
+/* 底部按钮 */
+.footer-btn {
+	@include styles('background-color', 'contentColor');
+	@include styles('color', 'color');
+	@include styles('border-top-color', 'lineColor');
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 750rpx;
+	height: 100rpx;
+	letter-spacing: 1rpx;
+	font-size: 32rpx;
+	border-top-width: 1rpx;
+	border-top-style: solid;
+}
+
+/* 输入框清除按钮 */
+.clear-close {
+	@include styles('color', 'minorColor');
+	font-size: 36rpx !important;
+	margin-left: 10rpx !important;
+}
+
+/* 字体 */
+.bold {
+	font-weight: bold;
+}
+
+/* 文字定位 */
+.text-left {
+	text-align: left !important;
+}
+
+.text-center {
+	text-align: center !important;
+}
+
+.text-right {
+	text-align: right !important;
+}
+
+/* 边距 */
+.plr-5 {
+	padding-left: 5rpx !important;
+	padding-right: 5rpx !important;
+}
+
+.plr-10 {
+	padding-left: 10rpx !important;
+	padding-right: 10rpx !important;
+}
+
+.plr-15 {
+	padding-left: 15rpx !important;
+	padding-right: 15rpx !important;
+}
+
+.plr-20 {
+	padding-left: 20rpx !important;
+	padding-right: 20rpx !important;
+}
+
+.plr-25 {
+	padding-left: 25rpx !important;
+	padding-right: 25rpx !important;
+}
+
+.plr-30 {
+	padding-left: 30rpx !important;
+	padding-right: 30rpx !important;
+}
+
+/* 颜色 */
+.grayColorBg {
+	@include styles('color', 'color');
+	@include styles('background-color', 'minorColor');
+}
+.grayColor {
+	@include styles('color', 'minorColor');
+}
+.buyColor {
+	@include styles('color', 'riseColor');
+}
+.sellColor {
+	@include styles('color', 'fallColor');
+}
+.successColor {
+	@include styles('color', 'success');
+}
+.riseColor {
+	@include styles('color', 'riseColor');
+}
+.riseColorBg {
+	@include styles('background-color', 'riseColor');
+}
+.fallColor {
+	@include styles('color', 'fallColor');
+}
+.fallColorBg {
+	@include styles('background-color', 'fallColor');
+}
+
+// 自定义弹窗头部
+.custom-popup {
+	height: 92%;
+	overflow: hidden;
+	@include styles('background', 'bgColor');
+	padding: 0 30rpx;
+
+	.header {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		padding: 37rpx 0 50rpx;
+
+		.header-title {
+			font-size: 48rpx;
+			font-weight: bold;
+			@include styles('color', 'color');
+		}
+
+		.icon_guanbi {
+			font-size: 30rpx;
+			font-weight: bold;
+		}
+	}
+}

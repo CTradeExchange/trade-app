@@ -1,0 +1,56 @@
+{
+  "name": "AppsFlyer插件",
+  "id": "sn-appsflyer",
+  "version": "1.0.9",
+  "description": "提供AppsFlyer功能",
+  "_dp_type": "nativeplugin",
+  "_dp_nativeplugin": {
+    "android": {
+      "useAndroidX": true,
+      "minSdkVersion": 21,
+      "integrateType": "aar",
+      "dependencies": [
+        "org.jetbrains.kotlin:kotlin-stdlib:1.4.21",
+        "com.android.installreferrer:installreferrer:2.2",
+        "com.google.android.gms:play-services-basement:17.0.0",
+        "com.google.android.gms:play-services-ads-identifier:17.0.0"
+      ],
+      "hooksClass": "com.itfenbao.snplugin.appsflyer.AppsFlyerProxy",
+      "plugins": [
+        {
+          "type": "module",
+          "name": "sn-appsflyer",
+          "class": "com.itfenbao.snplugin.appsflyer.AppsFlyerModule"
+        }
+      ],
+      "parameters": {
+        "devKey": {
+          "des": "开发者密钥DevKey",
+          "placeholder": "appsflyer_devkey"
+        }
+      }
+    },
+    "ios": {
+      "embedSwift": false,
+      "integrateType": "framework",
+      "hooksClass": "SnUniAppsFlyerProxy",
+      "plugins": [
+        {
+          "type": "module",
+          "name": "sn-appsflyer",
+          "class": "SnUniAppsFlyerModule"
+        }
+      ],
+      "frameworks": [
+        "Security.framework",
+        "SystemConfiguration.framework",
+        "CoreTelephony.framework",
+        "Protobuf.framework"
+      ],
+      "embedFrameworks": [
+        "Protobuf.framework"
+      ],
+      "deploymentTarget": "9.0"
+    }
+  }
+}

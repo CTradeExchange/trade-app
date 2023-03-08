@@ -1,0 +1,224 @@
+{
+    "name" : "PIDC",
+    "appid" : "__UNI__BE2311E",
+    "description" : "",
+    "versionName" : "1.3.8",
+    "versionCode" : 138,
+    "transformPx" : false,
+    "app-plus" : {
+        "darkmode" : true,
+        "themeLocation" : "theme.json",
+        /* 5+App特有相关 */
+        "usingComponents" : true,
+        "splashscreen" : {
+            "alwaysShowBeforeRender" : true,
+            "waiting" : true,
+            "autoclose" : true,
+            "delay" : 0
+        },
+        "modules" : {
+            "Camera" : {},
+            "Geolocation" : {},
+            "OAuth" : {}
+        },
+        /* 模块配置 */
+        "distribute" : {
+            /* 应用发布信息 */
+            "android" : {
+                /* android打包配置 */
+                "permissions" : [
+                    "<uses-feature android:name=\"android.hardware.camera\"/>",
+                    "<uses-feature android:name=\"android.hardware.camera.autofocus\"/>",
+                    "<uses-permission android:name=\"android.permission.ACCESS_COARSE_LOCATION\"/>",
+                    "<uses-permission android:name=\"android.permission.ACCESS_FINE_LOCATION\"/>",
+                    "<uses-permission android:name=\"android.permission.ACCESS_NETWORK_STATE\"/>",
+                    "<uses-permission android:name=\"android.permission.ACCESS_WIFI_STATE\"/>",
+                    "<uses-permission android:name=\"android.permission.CALL_PHONE\"/>",
+                    "<uses-permission android:name=\"android.permission.CAMERA\"/>",
+                    "<uses-permission android:name=\"android.permission.CHANGE_NETWORK_STATE\"/>",
+                    "<uses-permission android:name=\"android.permission.CHANGE_WIFI_STATE\"/>",
+                    "<uses-permission android:name=\"android.permission.FLASHLIGHT\"/>",
+                    "<uses-permission android:name=\"android.permission.GET_ACCOUNTS\"/>",
+                    "<uses-permission android:name=\"android.permission.MODIFY_AUDIO_SETTINGS\"/>",
+                    "<uses-permission android:name=\"android.permission.MOUNT_UNMOUNT_FILESYSTEMS\"/>",
+                    "<uses-permission android:name=\"android.permission.READ_PHONE_STATE\"/>",
+                    "<uses-permission android:name=\"android.permission.RECORD_AUDIO\"/>",
+                    "<uses-permission android:name=\"android.permission.VIBRATE\"/>",
+                    "<uses-permission android:name=\"android.permission.WAKE_LOCK\"/>",
+                    "<uses-permission android:name=\"android.permission.WRITE_SETTINGS\"/>"
+                ],
+                "abiFilters" : [ "armeabi-v7a", "x86" ],
+                "minSdkVersion" : 21,
+                "targetSdkVersion" : 31,
+                "schemes" : "pidc"
+            },
+            "ios" : {
+                "UIUserInterfaceStyle" : "Automatic",
+                "privacyDescription" : {
+                    "NSPhotoLibraryUsageDescription" : "The app needs to read your photo album in order to edit your profile picture for you",
+                    "NSPhotoLibraryAddUsageDescription" : "The app needs to read your photo album in order to edit your profile picture for you",
+                    "NSCameraUsageDescription" : "The app needs to read your camera so you can take pictures and upload your profile picture",
+                    "NSAppleMusicUsageDescription" : "The app needs access to a media library to serve you audio and video services"
+                },
+                "idfa" : false,
+                "dSYMs" : false,
+                "urltypes" : [
+                    {
+                        "urlidentifier" : "com.googleusercontent.apps.598804877637-tf5ujcs5ascq1g0h8ltj5mt0ik4f19bn",
+                        "urlschemes" : [
+                            "com.googleusercontent.apps.598804877637-tf5ujcs5ascq1g0h8ltj5mt0ik4f19bn",
+                            "pidc"
+                        ]
+                    }
+                ]
+            },
+            /* ios打包配置 */
+            "sdkConfigs" : {
+                "ad" : {},
+                "oauth" : {
+                    "apple" : {}
+                },
+                "geolocation" : {
+                    "system" : {
+                        "__platform__" : [ "ios", "android" ]
+                    }
+                }
+            },
+            "icons" : {
+                "android" : {
+                    "hdpi" : "unpackage/res/icons/72x72.png",
+                    "xhdpi" : "unpackage/res/icons/96x96.png",
+                    "xxhdpi" : "unpackage/res/icons/144x144.png",
+                    "xxxhdpi" : "unpackage/res/icons/192x192.png"
+                },
+                "ios" : {
+                    "appstore" : "unpackage/res/icons/1024x1024.png",
+                    "ipad" : {
+                        "app" : "unpackage/res/icons/76x76.png",
+                        "app@2x" : "unpackage/res/icons/152x152.png",
+                        "notification" : "unpackage/res/icons/20x20.png",
+                        "notification@2x" : "unpackage/res/icons/40x40.png",
+                        "proapp@2x" : "unpackage/res/icons/167x167.png",
+                        "settings" : "unpackage/res/icons/29x29.png",
+                        "settings@2x" : "unpackage/res/icons/58x58.png",
+                        "spotlight" : "unpackage/res/icons/40x40.png",
+                        "spotlight@2x" : "unpackage/res/icons/80x80.png"
+                    },
+                    "iphone" : {
+                        "app@2x" : "unpackage/res/icons/120x120.png",
+                        "app@3x" : "unpackage/res/icons/180x180.png",
+                        "notification@2x" : "unpackage/res/icons/40x40.png",
+                        "notification@3x" : "unpackage/res/icons/60x60.png",
+                        "settings@2x" : "unpackage/res/icons/58x58.png",
+                        "settings@3x" : "unpackage/res/icons/87x87.png",
+                        "spotlight@2x" : "unpackage/res/icons/80x80.png",
+                        "spotlight@3x" : "unpackage/res/icons/120x120.png"
+                    }
+                }
+            },
+            "splashscreen" : {
+                "useOriginalMsgbox" : false,
+                "androidStyle" : "common",
+                "iosStyle" : "common",
+                "android" : {
+                    "hdpi" : "D:/project/uniapp_certificates/Quotap/quotap橙色启动页/橙色启动页480_762.png",
+                    "xhdpi" : "D:/project/uniapp_certificates/Quotap/quotap橙色启动页/橙色启动页720_1242.png",
+                    "xxhdpi" : "D:/project/uniapp_certificates/Quotap/quotap橙色启动页/橙色启动页1080_1882.png"
+                }
+            }
+        },
+        "safearea" : {
+            "background" : "#ffffff",
+            "backgroundDark" : "#0d0e12",
+            "bottom" : {
+                "offset" : "auto"
+            }
+        },
+        "compatible" : {
+            "ignoreVersion" : true // true表示忽略版本检查提示框，HBuilderX1.9.0及以上版本支持  
+        },
+        "uniStatistics" : {
+            "enable" : true
+        },
+        "nativePlugins" : {}
+    },
+    /* SDK配置 */
+    "quickapp" : {},
+    /* 快应用特有相关 */
+    "mp-weixin" : {
+        /* 微信小程序特有相关 */
+        "appid" : "wx41ee8caecc93b1f6",
+        "setting" : {
+            "urlCheck" : false,
+            "minified" : true
+        },
+        "usingComponents" : true,
+        "uniStatistics" : {
+            "enable" : false
+        }
+    },
+    "mp-alipay" : {
+        "usingComponents" : true,
+        "uniStatistics" : {
+            "enable" : false
+        }
+    },
+    "mp-baidu" : {
+        "usingComponents" : true,
+        "uniStatistics" : {
+            "enable" : false
+        }
+    },
+    "mp-toutiao" : {
+        "usingComponents" : true,
+        "uniStatistics" : {
+            "enable" : false
+        }
+    },
+    "mp-qq" : {
+        "usingComponents" : true,
+        "uniStatistics" : {
+            "enable" : false
+        }
+    },
+    "uniStatistics" : {
+        "enable" : false,
+        "version" : "2"
+    },
+    "h5" : {
+        "uniStatistics" : {
+            "enable" : false
+        },
+        "router" : {
+            "mode" : "hash"
+        },
+        "sdkConfigs" : {
+            "maps" : {}
+        }
+    },
+    "mp-kuaishou" : {
+        "uniStatistics" : {
+            "enable" : false
+        }
+    },
+    "mp-jd" : {
+        "uniStatistics" : {
+            "enable" : false
+        }
+    },
+    "mp-lark" : {
+        "uniStatistics" : {
+            "enable" : false
+        }
+    },
+    "quickapp-webview-huawei" : {
+        "uniStatistics" : {
+            "enable" : false
+        }
+    },
+    "quickapp-webview-union" : {
+        "uniStatistics" : {
+            "enable" : false
+        }
+    }
+}

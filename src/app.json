@@ -1,0 +1,42 @@
+{
+	"ios": {
+		"google_client_id//": "ios google客户端ID",
+		"google_client_id": "598804877637-tf5ujcs5ascq1g0h8ltj5mt0ik4f19bn.apps.googleusercontent.com",
+		"telegram_client_id//": "ios telegram客户端ID",
+		"telegram_client_id": "pre360bot"
+	},
+	"android": {
+		"google_client_id//": "android google客户端ID",
+		"google_client_id": "598804877637-0ldnvu9j9u0pnv234rakarnsrlcnpr54.apps.googleusercontent.com",
+		"telegram_client_id//": "android telegram客户端ID",
+		"telegram_client_id": "pre360bot"
+	},
+	"telegramUrl//": "telegram第三方跳转地址",
+	"telegramUrl": "https://pre.cmfbl.com",
+	"isFund//": "是否显示基金功能",
+	"isFund": true,
+	"limitOrderConfig//": "限价单交易配置说明, 例如：2_1, 2代表玩法类型, 1代表成交模式。玩法类型： 【1: 合约全仓,2: 合约逐仓,3: 杠杆,5: 现货,6: 股票】，成交模式：【 1:MM 2:蝴蝶 3:撮合 4:聚合】",
+	"limitOrderConfig": ["5_1","3_1", "1_3", "1_2", "1_1", "2_1", "2_2"],
+	"inviteEnable//": "inviteEnable: 开户是否显示邀请码 inviteURL: 接口地址 invitePK: 公钥",
+	"inviteEnable": true,
+	"inviteURL": "https://act-pre.jswlr.com",
+	"invitePK": "MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQCszs/Vm6jQWeaK0GAHP+XD50pWRLR4v/m+qlAh9lJCkdH9rh1r7vfuMwfhtaOOIoTz8X+GbWl1PazgDtidXrdnmU7fw3b0UlHOkr35EJaEFonfnP8XqzqygJ+bG/Lk3kwpeGTtt+bf7FUPCkmEov9tJTPJ0MoaHY+rwB1otk1WtwIDAQAB",
+	"isGoogle//": "是否开放google登录",
+	"isGoogle": true,
+	"isTelegram//": "是否开放telegram登录",
+	"isTelegram": true,
+	"isApple//": "是否开放apple登录",
+	"isApple": true,
+	"mineShowCash//": "个人中心页面是否显示出入金按钮",
+	"mineShowCash": true,
+	"tradeTypeShowCash//": "玩法是否显示出入金按钮",
+	"tradeTypeShowCash": "[1, 2, 5]",
+	"productKeys//": "首页推荐的报价列表",
+	"productKeys": ["1353_1", "1349_1", "1352_1"],
+	"productKeysDemo//": "首页模拟推荐的报价列表",
+	"productKeysDemo": ["695_1", "699_1", "13521_1"],
+    "registerSuccessProductIds//": "注册成功展示的产品列表id",
+    "registerSuccessProductIds": [692],
+    "noAccessArea//" : "禁止访问系统的国家code,数组形式",
+    "noAccessArea" : []
+}

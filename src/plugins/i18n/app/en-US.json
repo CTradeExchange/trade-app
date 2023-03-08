@@ -1,0 +1,60 @@
+{
+	"tabBar": {
+		"home": "Home",
+		"quote": "Quote",
+		"trade": "Trade",
+		"assets": "Assets",
+		"mine": "Mine"
+	},
+	"upgrade": {
+		"yes": "Yes",
+		"no": "No",
+		"title": "Update log",
+		"tip1": "Warm prompt ",
+		"tip2": "The current APP has an update function and needs to be restarted",
+		"tip3": "Installing……",
+		"tip4": "Download complete, install immediately",
+		"tip5": "Update complete Restart",
+		"tip6": "Discover a new version",
+		"tip7": "Immediate jump update",
+		"tip8": "Download the update now",
+		"tip9": "Downloading, please wait……",
+		"tip10": "Downloading, please wait……",
+		"tip11": "Do you want to cancel download?",
+		"tip12": "Installation succeeded. Restarting……",
+		"tip13": "If the installation is successful, restart the application to experience the new version",
+		"tip14": "Update failed, file does not exist, please download again"
+	},
+	"calendar": {
+		"dateSelection": "Date selection",
+		"week": "Week",
+		"weeks": {
+			"0": "Sun",
+			"1": "Mon",
+			"2": "Tues",
+			"3": "Wed",
+			"4": "Thurs",
+			"5": "Fri",
+			"6": "Sat"
+		},
+		"arrive": "Arrive",
+		"confirm": "Confirm",
+		"start": "Start",
+		"end": "End",
+		"year": "Year",
+		"month": "Month",
+		"day": "Day",
+		"hour": "Hour",
+		"minute": "Minute",
+		"second": "Second",
+		"tip": "The date is out of range~",
+		"timeLimit": "A maximum of 180 days can be selected"
+	},
+	"upload": {
+		"underway": "Uploading...",
+		"fail": "Upload Fail",
+		"again": "Upload Again",
+		"maxTip": "A maximum of {0} images can be uploaded",
+		"imgSizeLimit": "Image size cannot exceed "
+	}
+}

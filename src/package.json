@@ -1,0 +1,15 @@
+{
+    "id": "x-lottie",
+    "name": "x-lottie",
+    "version": "1.0.4",
+    "description": "高性能lottie动画展示支持app h5",
+    "keywords": [
+        "lottie"
+    ],
+    "dcloudext": {
+        "category": [
+            "前端组件",
+            "通用组件"
+        ]
+    }
+}

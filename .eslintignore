@@ -1,0 +1,4 @@
+# 忽略检测的文件
+node_modules/
+unpackage/
+dist/

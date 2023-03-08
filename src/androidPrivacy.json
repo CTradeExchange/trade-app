@@ -1,0 +1,27 @@
+{
+    "version" : "1.0",
+    "prompt" : "none",
+    "title" : "Service Agreement and Privacy Policy",
+    "message" : "　　Please be sure to carefully read and fully understand the terms of the Service Agreement and Privacy Policy, including but not limited to: In order to provide you with better services, we need to collect your device identification, operation logs and other information for analysis, Optimize application performance。<br/>　　You can read<a href=\"https://h5.free2trader.com/html/agreement.html\">《Service Agreement》</a>and<a href=\"https://h5.free2trader.com/html/privacy.html\">《Privacy Policy》</a>Learn more. If you agree, please click the button below to start accepting our services。",
+    "buttonAccept" : "Agree and accept",
+    "buttonRefuse" : "Disagree",
+    "second" : {
+        "title" : "Confirmation prompt",
+        "message" : "　　Before entering the app, you need to agree<a href=\"https://h5.free2trader.com/html/agreement.html\">《Service Agreement》</a>and<a href=\"https://h5.free2trader.com/html/privacy.html\">《Privacy Policy》</a>，Otherwise, the app will be exited。",
+        "buttonAccept" : "Agree and continue",
+        "buttonRefuse" : "Exit the app"
+    },
+    "styles" : {
+        "backgroundColor" : "#ffffff",
+        "borderRadius" : "5px",
+        "title" : {
+            "color" : "#000000"
+        },
+        "buttonAccept" : {
+            "color" : "#000000"
+        },
+        "buttonRefuse" : {
+            "color" : "#656667"
+        }
+    }
+}

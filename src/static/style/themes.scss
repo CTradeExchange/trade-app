@@ -1,0 +1,113 @@
+// 主题列表
+$themes: (
+	// 白天
+	light: (
+		// 公共
+		primary: #0062ff,
+		primaryBg: #0062ff1A,
+		warn: #ef5353,
+		success: #03A66D,
+		focusColor: #f2a11b,
+		gray-6: #969799,
+		quoteRiseBg: #f8e8e8,
+		quoteFallBg: #e9f0f7,
+		mainColor: #000000,
+		checkColor: #ff9900,
+		successColor: #00cc66,
+		rejectColor: #ff0000,
+		// 自有
+		primaryAssistColor: #f4f7fc,
+		color: #333333,
+		normalColor: #656667,
+		minorColor: #999999,
+		placeholdColor: #c2c2c2,
+		contentColor: #ffffff,
+		bgColor: #F1F2F6,
+		assistColor: #f8f8f8,
+		lineColor: #eeeeee
+	),
+	
+	// 黑夜
+	night: (
+		// 公共
+		primary: #0062ff,
+		primaryBg: #0062ff1A,
+		warn: #ef5353,
+		success: #03A66D,
+		focusColor: #f2a11b,
+		gray-6: #969799,
+		quoteRiseBg: #f8e8e8,
+		quoteFallBg: #e9f0f7,
+		mainColor: #000000,
+		checkColor: #ff9900,
+		successColor: #00cc66,
+		rejectColor: #ff0000,
+		// 自有
+		primaryAssistColor: #2c2e3b,
+		color: #ffffff,
+		normalColor: #9294a3,
+		minorColor: #9294a3,
+		placeholdColor: #515366,
+		contentColor: #191a1e,
+		bgColor: #0d0e12,
+		assistColor: #2c2e3b,
+		lineColor: #2c2e3b
+	)
+);
+
+// 涨跌颜色列表
+$upDownColors: (
+	// 绿涨红跌
+	1: (
+		riseColor: #03A66D,
+		fallColor: #ef5353,
+	),
+	// 红涨绿跌
+	2: (
+		riseColor: #ef5353,
+		fallColor: #03A66D,
+	)
+);
+  
+// 遍历主题map
+@mixin themeify {
+	@each $theme-name, $value in $themes {
+		$theme-map: $value !global;
+		[data-theme="#{$theme-name + ''}"] & {
+			@content;
+		}
+	}
+}
+// 遍历涨跌颜色map
+@mixin changeify {
+	@each $change-color, $value in $upDownColors {
+		$theme-map: $value !global;
+		[change-color="#{$change-color + ''}"] & {
+			@content;
+		}
+	}
+}
+
+// 声明一个根据Key获取颜色的function
+@function themed($key) {
+	@return map-get($theme-map, $key);
+}
+
+// 设置属性颜色
+@mixin styles($style, $color) {
+	@if ($color == 'riseColor') {
+		@include changeify {
+			#{$style}: themed($color) !important;
+		}
+	} @else if ($color == 'fallColor') {
+		@include changeify {
+			#{$style}: themed($color) !important;
+		}
+	} @else {
+		@include themeify {
+			#{$style}: themed($color) !important;
+		}
+	}
+}
+
+
